@@ -1,0 +1,31 @@
+/*!
+	Theme Name: Ajs Genesis Starter
+	Theme URI: http://anthonyskelton.com/ajs-genesis-starter
+
+	Description: A Genesis-powered Developer's Starter Child Theme
+	Author: ajskelton
+	Author URI: http://anthonyskelton.com
+
+	Version: 1.0.0
+
+	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	Text Domain: ajs-starter-theme
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import 'bourbon';
+@import 'neat';
+@import '../../node_modules/sass-rem/rem';
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'layouts/index';
+@import 'components/index';
+@import 'plugins/index';
+@import 'views/index';
