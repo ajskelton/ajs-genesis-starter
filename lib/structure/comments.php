@@ -33,7 +33,7 @@ add_filter( 'genesis_comment_list_args', __NAMESPACE__ . '\setup_comments_gravat
  */
 function setup_comments_gravatar( array $args ) {
 
-	$args['avatar_size'] = 60;
+	$args['avatar_size'] = 100;
 
 	return $args;
 

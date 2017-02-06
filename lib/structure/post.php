@@ -33,6 +33,6 @@ add_filter( 'genesis_author_box_gravatar_size', __NAMESPACE__ . '\setup_author_b
  */
 function setup_author_box_gravatar_size( $size ) {
 
-	return 90;
+	return 160;
 
 }
