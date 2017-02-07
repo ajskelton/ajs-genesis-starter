@@ -1,0 +1,63 @@
+/* Responsive Navigation
+--------------------------------------------- */
+
+.responsive-menu-icon,
+.responsive-menu .menu-item-has-children {
+  cursor: pointer;
+}
+
+.responsive-menu .menu-item,
+.responsive-menu-icon {
+  display: block;
+}
+
+.responsive-menu,
+.responsive-menu > .menu-item > .sub-menu {
+  display: none;
+}
+
+.responsive-menu-icon {
+  text-align: center;
+}
+
+.responsive-menu-icon::before {
+  color: #000;
+  content: "\f333";
+  display: inline-block;
+  font: normal 20px/1 'dashicons';
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.responsive-menu > .menu-item-has-children:before {
+  content: "\f347";
+  float: right;
+  font: normal 16px/1 'dashicons';
+  height: 16px;
+  padding: 15px 20px;
+  right: 0;
+  text-align: right;
+  z-index: 9999;
+}
+
+.responsive-menu .menu-open.menu-item-has-children:before {
+  content: "\f343";
+}
+
+.responsive-menu .sub-menu .sub-menu {
+  margin: 0;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .responsive-menu,
+  .responsive-menu > .menu-item > .sub-menu {
+    display: block;
+  }
+
+  .responsive-menu-icon,
+  .responsive-menu > .menu-item-has-children:before,
+  .responsive-menu .menu-open.menu-item-has-children:before {
+    display: none;
+  }
+}

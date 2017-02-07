@@ -1,0 +1,22 @@
+/* Site Header Image
+--------------------------------------------- */
+
+.header-image .site-title > a {
+  background-position: center center !important;
+  background-size: 300px 57px !important;
+  float: left;
+  min-height: 57px;
+  width: 100%;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+  display: block;
+  text-indent: -9999px;
+}
+
+@media only screen and (min-width: 800px) {
+  .header-image .site-title > a {
+    width: 300px;
+  }
+}

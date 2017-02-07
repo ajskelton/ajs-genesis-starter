@@ -75,7 +75,7 @@ load_nonadmin_files();
 
 
 //* Setup Theme
-//include_once( $folder_lib_root() . '/lib/theme-defaults.php' );
+//include_once( $folder_lib_root() . '/lib/theme-elements.php' );
 
 //* Add Image upload and Color select to WordPress Theme Customizer
 //require_once( $folder_lib_root() . '/lib/customizer.php' );

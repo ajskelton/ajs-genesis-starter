@@ -1,0 +1,35 @@
+/* Sticky Message
+---------------------------------------------------------------------------------------------------- */
+
+.sticky-message {
+  background-color: #f5f5f5;
+  display: none;
+  font-size: 18px;
+  opacity: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+
+  @media only screen and (min-width: 800px) {
+    display: block;
+  }
+}
+
+.sticky-message {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -ms-transition:     all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+}
+
+.sticky-message.reveal {
+  opacity: 1;
+}
+
+.sticky-message p:last-child {
+  margin-bottom: 0;
+}
