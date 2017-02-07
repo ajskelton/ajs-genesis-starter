@@ -61,10 +61,19 @@ ol,
 ul {
   margin: 0;
   padding: 0;
+
+  li ul,
+  li ol {
+    margin-left: 1em;
+  }
 }
 
-li {
-  list-style-type: none;
+ol li {
+  list-style-type: decimal;
+}
+
+ul li {
+  list-style-type: disc;
 }
 
 b,
@@ -91,4 +100,10 @@ blockquote::before {
   left: -20px;
   position: relative;
   top: -10px;
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
 }
