@@ -1,6 +1,13 @@
 /* Primary Navigation
 --------------------------------------------- */
+.nav-primary {
+  @include span-columns(12);
 
+  @include media( $breakpoint__screen-size--tablet-landscape ) {
+    @include span-columns(6);
+    @include omega();
+  }
+}
 .nav-primary .sub-menu {
   border-top: 1px solid #f5f5f5;
 }

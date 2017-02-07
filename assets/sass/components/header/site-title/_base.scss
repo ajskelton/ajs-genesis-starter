@@ -12,3 +12,12 @@
 .site-title a:hover {
   color: #333;
 }
+
+.title-area {
+  @include span-columns(12);
+
+  @include media( $breakpoint__screen-size--tablet-landscape ) {
+    @include span-columns(6);
+    text-align: left;
+  }
+}

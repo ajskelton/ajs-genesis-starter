@@ -1,11 +1,43 @@
 /* Base Layout Styles
 --------------------------------------------- */
 
+.site-inner,
 .wrap {
+  @include outer-container;
 
-  @media only screen and (min-width: 800px) {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 0 $gutter;
+
+  @include media( $breakpoint__screen-size--phone-landscape) {
+    padding: 0 $gutter * 2;
+  }
+
+  @include media( $breakpoint__screen-size--desktop) {
+    padding: 0;
+  }
+}
+
+.site-inner {
+  padding-top: 40px;
+  word-wrap: break-word;
+}
+
+.content-sidebar-wrap {
+
+  main {
+    @include span-columns(12);
+
+    @include media( $breakpoint__screen-size--tablet-portrait ) {
+      @include span-columns(8);
+    }
+  }
+
+
+  aside {
+    @include span-columns(12);
+
+    @include media( $breakpoint__screen-size--tablet-portrait ) {
+      @include span-columns(4);
+      @include omega();
+    }
   }
 }
