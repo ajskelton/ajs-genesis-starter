@@ -7,14 +7,14 @@
 
 .entry-title {
   font-size: 36px;
-}
 
-.entry-title a {
-  color: #333;
-}
+  a {
+    color: #333;
 
-.entry-title a:hover {
-  color: #e5554e;
+    &:hover {
+      color: #e5554e;
+    }
+  }
 }
 
 .widget-title {

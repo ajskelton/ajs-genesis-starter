@@ -19,5 +19,8 @@ namespace AjsGenesisStarter;
  */
 function unregister_menu_callbacks() {
 	// Remove the sub navigation
+	remove_action( 'genesis_after_header', 'genesis_do_nav' );
 	remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 }
+
+add_action( 'genesis_header', 'genesis_do_nav', 12 );

@@ -55,6 +55,11 @@
     display: block;
   }
 
+  .responsive-menu .menu-item,
+  .responsive-menu-icon {
+    display: inline-block;
+  }
+
   .responsive-menu-icon,
   .responsive-menu > .menu-item-has-children:before,
   .responsive-menu .menu-open.menu-item-has-children:before {
