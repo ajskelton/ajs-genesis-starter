@@ -1,0 +1,32 @@
+//
+// Breakpoints
+//==========================
+
+$breakpoint__screen-size--phone-portrait: new-breakpoint(min-width $phone-portrait 4);
+$breakpoint__screen-size--phone-landscape: new-breakpoint(min-width $phone-landscape 6);
+$breakpoint__screen-size--tablet-portrait: new-breakpoint(min-width $tablet-portrait 12);
+$breakpoint__screen-size--tablet-landscape: new-breakpoint(min-width $tablet-landscape 12);
+$breakpoint__screen-size--desktop: new-breakpoint(min-width $desktop 12);
+$breakpoint__screen-size--large-desktop: new-breakpoint(min-width $large-desktop 12);
+
+// --------------------------------------------------------------
+// Grid Settings - overrides default Bourbon Neat
+// http://neat.bourbon.io/examples/
+// --------------------------------------------------------------
+
+$column: em(69);       // default width of your colums
+$gutter: em(12);       // default width of the gutters
+$max-width: 1240px;   // max-width of the grid/theme in pixels
+$total-columns: 12;    // number of columns
+
+// Set Bourbon's flex-grid variables to match what Neat is doing
+// http://bourbon.io/docs/#flex-grid
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+// Optional - A handy visual grid overlay
+$visual-grid: true;        // true/false
+$visual-grid-color: #ffc0cb;   // color of visual grid
+$visual-grid-index: front;  // front/back
+$visual-grid-opacity: 0.2;  // opacity of visual grid
