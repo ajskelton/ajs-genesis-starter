@@ -2,13 +2,13 @@
 /**
  * Setup the child theme
  *
- * @package   AjsGenesisStarter
+ * @package   AnthonySkeltonTheme
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace AjsGenesisStarter;
+namespace AnthonySkeltonTheme;
 
 add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme' );
 /**

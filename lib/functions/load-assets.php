@@ -2,13 +2,13 @@
 /**
  * Description
  *
- * @package   AjsGenesisStarter
+ * @package   AnthonySkeltonTheme
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace AjsGenesisStarter;
+namespace AnthonySkeltonTheme;
 
 //* Enqueue Scripts and Styles
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );

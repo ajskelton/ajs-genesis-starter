@@ -2,13 +2,13 @@
 /**
  * Description
  *
- * @package   AjsGenesisStarter
+ * @package   AnthonySkeltonTheme
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace AjsGenesisStarter;
+namespace AnthonySkeltonTheme;
 
 /**
  * Get the string for the setting prefix
@@ -18,7 +18,7 @@ namespace AjsGenesisStarter;
  * @return string
  */
 function get_settings_prefix() {
-	return 'AjsGenesisStarter';
+	return 'AnthonySkeltonTheme';
 }
 
 /**

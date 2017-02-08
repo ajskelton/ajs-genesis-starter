@@ -2,13 +2,13 @@
 /**
  * Adds the CSS from the Customizer options.
  *
- * @package   AjsGenesisStarter
+ * @package   AnthonySkeltonTheme
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace AjsGenesisStarter;
+namespace AnthonySkeltonTheme;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\build_inline_css_from_customizer_settings' );
 /**

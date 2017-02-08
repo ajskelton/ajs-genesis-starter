@@ -1,7 +1,7 @@
 {
-  "name": "ajs-genesis-starter",
+  "name": "ajs-genesis-child",
   "version": "1.0.0",
-  "description": "This is a developer friendly starter child theme for the Genesis framework which includes a modular architecture, Sass, gulp, Bourbon, Neat, and Composer. It is your starting child theme for all of your projects to save you time and moola.",
+  "description": "The genesis child theme for AnthonySkelton.com",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
