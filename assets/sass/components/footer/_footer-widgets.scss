@@ -2,14 +2,14 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-  background-color: #f5f5f5;
+  background-color: $footer-widgets--background-color;
   clear: both;
   font-size: 18px;
   padding: 10%;
 }
 
 .footer-widgets li {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $footer-widgets__list-item--border-color;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }

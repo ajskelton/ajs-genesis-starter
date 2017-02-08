@@ -3,9 +3,71 @@
 //==========================
 $white: #fff;
 $black: #000;
-$red: #c3251d;
+$red: #e5554e;
+$off-white: #f5f5f5;
 $gray--lightest: #eee;
-$gray--lighter: #ccc;
+$gray--lighter: #ddd;
 $gray--light: #999;
 $gray--medium: #777;
 $gray: #333;
+
+
+//
+// Body Colors
+//==========================
+$body--background-color: $white;
+$body--color: $gray;
+$link--color: $red;
+$link--hover-color: $gray;
+$table--border-color: #ddd;
+
+
+//
+// Header
+//===========================
+$site-title--link-color: $gray;
+$site-header--border-color: $off-white;
+
+//
+// Entry Content
+//===========================
+$entry-comments--border-color: $off-white;
+$entry--border-color: $off-white;
+$entry-content__code--background-color: $gray;
+$entry-content__code--color: $gray--lighter;
+
+$archive-pagination--background-color: $gray;
+$archive-pagination--color: $white;
+$archive-pagination--hover-background-color: $red;
+
+$featured-content__entry--color: $off-white;
+
+//
+// Footer
+//===========================
+$footer-widgets--background-color: $off-white;
+$footer-widgets__list-item--border-color: $white;
+$site-footer--border-color: $off-white;
+
+
+//
+// Navigation
+//===========================
+$nav--link-color: $gray;
+$nav--hover-color: $red;
+$nav__highlight--background-color: #e5554e;
+$nav__highlight--color: $white;
+$nav__highlight--hover-background-color: $gray;
+$nav__highlight--hover-color: $white;
+
+$nav__sub-menu--border-color: $off-white;
+$nav-secondary--border-color: $off-white;
+
+$responsive-icon--color: $black;
+
+//
+// Widgets
+//===========================
+
+$sticky-message--background-color: $off-white;
+

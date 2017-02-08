@@ -3,7 +3,7 @@
 
 .entry,
 .page.page-template-page_blog-php .entry {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $entry--border-color;
   margin-bottom: 60px;
 }
 
@@ -33,6 +33,6 @@
 }
 
 .entry-content code {
-  background-color: #333;
-  color: #ddd;
+  background-color: $entry-content__code--background-color;
+  color: $entry-content__code--color;
 }

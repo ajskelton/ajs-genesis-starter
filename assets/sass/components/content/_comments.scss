@@ -30,7 +30,7 @@ p.comment-meta,
 }
 
 .entry-comments .comment {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $entry-comments--border-color;
 }
 
 p.comment-form-comment {

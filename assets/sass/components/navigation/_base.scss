@@ -14,7 +14,7 @@
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: $nav--link-color;
   display: block;
   padding: 20px;
 }
@@ -22,7 +22,7 @@
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e;
+  color: $nav--hover-color;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -80,14 +80,14 @@
   }
 
   .genesis-nav-menu li.highlight a {
-    background-color: #e5554e;
+    background-color: $nav__highlight--background-color;
     border-radius: 3px;
-    color: #fff;
+    color: $nav__highlight--color;
     margin-left: 20px;
   }
 
   .genesis-nav-menu li.highlight a:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: $nav__highlight--hover-background-color;
+    color: $nav__highlight--hover-color;
   }
 }

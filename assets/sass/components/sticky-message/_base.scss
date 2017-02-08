@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .sticky-message {
-  background-color: #f5f5f5;
+  background-color: $sticky-message--background-color;
   display: none;
   font-size: 18px;
   opacity: 0;

@@ -9,7 +9,7 @@
   }
 }
 .nav-primary .sub-menu {
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid $nav__sub-menu--border-color;
 }
 
 .nav-primary .sub-menu .sub-menu {
@@ -24,7 +24,7 @@
 --------------------------------------------- */
 
 .nav-secondary {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid $nav-secondary--border-color;
   padding-bottom: 10px;
   padding-top: 10px;
 }

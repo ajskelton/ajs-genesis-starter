@@ -14,9 +14,9 @@
 }
 
 .archive-pagination li a {
-  background-color: #333;
+  background-color: $archive-pagination--background-color;
   border-radius: 3px;
-  color: #fff;
+  color: $archive-pagination--color;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -25,5 +25,5 @@
 
 .archive-pagination li a:hover,
 .archive-pagination .active a {
-  background-color: #e5554e;
+  background-color: $archive-pagination__hover-background-color;
 }

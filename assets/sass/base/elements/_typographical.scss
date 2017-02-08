@@ -2,8 +2,8 @@
 --------------------------------------------- */
 
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: $body--background-color;
+  color: $body--color;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -44,12 +44,12 @@ textarea:focus,
 }
 
 a {
-  color: #e5554e;
+  color: $link--color;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333;
+  color: $link--hover-color;
 }
 
 p {
