@@ -3,9 +3,14 @@
 
 .site-title {
   font-size: 30px;
+  font-weight: 200;
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
+
+  span {
+    font-weight: 800;
+  }
 }
 
 .site-title a,

@@ -1,58 +1,37 @@
 /* Columns
 --------------------------------------------- */
 
-@media only screen and (min-width: 800px) {
+.one-half,
+.one-third,
+.one-quarter,
+.two-thirds,
+.three-quarters {
+  @include span-columns(12);
+}
 
-  .five-sixths,
-  .four-sixths,
-  .one-fourth,
-  .one-half,
-  .one-sixth,
-  .one-third,
-  .three-fourths,
-  .three-sixths,
-  .two-fourths,
-  .two-sixths,
+@include media( $breakpoint__screen-size--tablet-portrait ) {
+
+  .one-half {
+    @include span-columns(6);
+  }
+
+  .one-third {
+    @include span-columns(4);
+  }
+
+  .one-quarter {
+    @include span-columns(3);
+  }
+
   .two-thirds {
-    float: left;
-    margin-left: 2.564102564102564%;
+    @include span-columns(8);
   }
 
-  .one-half,
-  .three-sixths,
-  .two-fourths {
-    width: 48.717948717948715%;
+  .three-quarters {
+    @include span-columns(9);
   }
 
-  .one-third,
-  .two-sixths {
-    width: 31.623931623931625%;
+  .last {
+    @include omega();
   }
-
-  .four-sixths,
-  .two-thirds {
-    width: 65.81196581196582%;
-  }
-
-  .one-fourth {
-    width: 23.076923076923077%;
-  }
-
-  .three-fourths {
-    width: 74.35897435897436%;
-  }
-
-  .one-sixth {
-    width: 14.52991452991453%;
-  }
-
-  .five-sixths {
-    width: 82.90598290598291%;
-  }
-
-  .first {
-    clear: both;
-    margin-left: 0;
-  }
-
 }

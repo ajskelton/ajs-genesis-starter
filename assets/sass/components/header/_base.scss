@@ -2,7 +2,9 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  border-bottom: 1px solid $site-header--border-color;
+  //border-bottom: 1px solid $site-header--border-color;
+  background-color: $site-header--background-color;
+  color: $white;
   position: relative;
   text-align: center;
   z-index: 1000;

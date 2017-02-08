@@ -1,0 +1,139 @@
+/* Front Page Header Styles
+---------------------------------------------------------------------------------------------------- */
+
+.site-header.front-page {
+  background: url('assets/images/footer_lodyas.png') repeat center center;
+  //height: 100vh;
+
+  .wrap {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .nav-primary {
+    @include span-columns(12);
+    @include omega();
+  }
+
+  .title-area {
+    @include span-columns(12);
+    @include omega();
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    text-align: center;
+  }
+
+  .site-title {
+    line-height: 1;
+    margin-bottom: $gutter;
+
+    @include media( $breakpoint__screen-size--phone-portrait ) {
+      font-size: 36px;
+    }
+
+    @include media( $breakpoint__screen-size--phone-landscape ) {
+      font-size: 48px;
+    }
+
+    @include media( $breakpoint__screen-size--tablet-portrait ) {
+      font-size: 56px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .site-description {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      @include triangle(36px, $off-white, down);
+      left: 50%;
+      bottom: -50px;
+      margin-left: -18px;
+
+      @include media($breakpoint__screen-size--phone-landscape){
+        bottom: -75px;
+      }
+
+      @include media($breakpoint__screen-size--tablet-portrait){
+        bottom: -100px;
+      }
+    }
+
+    li {
+      list-style: none;
+
+      @include media($breakpoint__screen-size--phone-landscape) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.front-page .nav-primary {
+
+
+  background-color: $site-header--background-color;
+
+  .genesis-nav-menu {
+    @include span-columns(12);
+    @include omega();
+    display: none;
+    //float: none;
+    text-align: center;
+
+    @include media( $breakpoint__screen-size--tablet-portrait ) {
+      display: block;
+    }
+  }
+}
+
+.profile {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding-bottom: $gutter * 3;
+
+  @include media( $breakpoint__screen-size--tablet-portrait ) {
+    //padding-bottom: 0;
+    //padding-right: $gutter * 2;
+    //text-align: left;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: '';
+    @include triangle(36px, $gray, down);
+    position: absolute;
+    left:50%;
+    bottom: 10px;
+    margin-left: -16px;
+
+    @include media( $breakpoint__screen-size--tablet-portrait ) {
+      @include triangle(36px, $gray, right);
+      bottom: 0;
+      left: 51%;
+    }
+
+    @include media( $breakpoint__screen-size--tablet-landscape ) {
+      left: auto;
+      right: 0;
+      bottom: 50%;
+    }
+
+    @include media( $breakpoint__screen-size--desktop ) {
+      right: 5%;
+    }
+  }
+}

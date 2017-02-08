@@ -25,8 +25,10 @@ $table--border-color: #ddd;
 //
 // Header
 //===========================
-$site-title--link-color: $gray;
+$site-title--link-color: $white;
 $site-header--border-color: $off-white;
+$site-header--background-color: #3d5d8e;
+
 
 //
 // Entry Content
@@ -53,9 +55,9 @@ $site-footer--border-color: $off-white;
 //
 // Navigation
 //===========================
-$nav--link-color: $gray;
+$nav--link-color: $off-white;
 $nav--hover-color: $red;
-$nav__highlight--background-color: #e5554e;
+$nav__highlight--background-color: $gray;
 $nav__highlight--color: $white;
 $nav__highlight--hover-background-color: $gray;
 $nav__highlight--hover-color: $white;
