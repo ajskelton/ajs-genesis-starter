@@ -1,0 +1,15 @@
+/* Pagination
+--------------------------------------------- */
+
+.single {
+  .content-sidebar-wrap {
+    @include media($breakpoint__screen-size--tablet-portrait) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+    @include media($breakpoint__screen-size--tablet-landscape) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}

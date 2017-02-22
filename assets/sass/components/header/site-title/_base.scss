@@ -7,9 +7,14 @@
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
+  padding: 10px 0 0 0;
 
   span {
     font-weight: 800;
+  }
+
+  @include media( $breakpoint__screen-size--tablet-landscape ) {
+    padding: 10px 0;
   }
 }
 

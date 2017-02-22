@@ -1,0 +1,55 @@
+/* Columns
+--------------------------------------------- */
+
+.content-content {
+  @include outer-container;
+
+  @include media($breakpoint__screen-size--tablet-landscape) {
+    padding-bottom: $gutter * 2;
+  }
+
+  .content-image-link {
+    @include span-columns(12);
+
+    @include media($breakpoint__screen-size--tablet-landscape) {
+      @include span-columns(6);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .post-excerpt {
+    @include span-columns(12);
+
+    @include media($breakpoint__screen-size--tablet-landscape) {
+      @include span-columns(6);
+      @include omega();
+    }
+  }
+}
+.content-footer {
+  text-align: center;
+  border-bottom: 3px solid $blue;
+
+  @include media($breakpoint__screen-size--tablet-landscape) {
+    padding: $gutter 0 0 0;
+  }
+}
+
+.content-title {
+  text-align: center;
+}
+
+article {
+  margin-bottom: $gutter * 2;
+}
+
+.format-image {
+  .content-image-link {
+    @include span-columns(12);
+    @include omega();
+  }
+}

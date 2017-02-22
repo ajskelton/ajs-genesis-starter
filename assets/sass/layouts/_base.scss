@@ -17,7 +17,11 @@
 }
 
 .site-inner {
-  padding-top: 40px;
+  padding-top: 10px;
+
+  @include media( $breakpoint__screen-size--tablet-portrait) {
+    padding-top: 40px;
+  }
   word-wrap: break-word;
 }
 

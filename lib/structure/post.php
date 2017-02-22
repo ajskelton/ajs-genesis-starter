@@ -19,6 +19,7 @@ namespace AnthonySkeltonTheme;
  */
 function unregister_post_callbacks() {
 	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+	remove_action( 'genesis_before_loop', 'genesis_do_posts_page_heading' );
 }
 
 add_filter( 'genesis_author_box_gravatar_size', __NAMESPACE__ . '\setup_author_box_gravatar_size' );
