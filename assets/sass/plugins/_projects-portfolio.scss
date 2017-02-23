@@ -1,0 +1,62 @@
+/* Projects Portfolio Styles
+--------------------------------------------- */
+
+.projects-portfolio--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.project {
+  article {
+    width: 100%;
+    text-align: center;
+    @include media($breakpoint__screen-size--phone-landscape) {
+      width: 49%;
+    }
+    @include media($breakpoint__screen-size--tablet-landscape) {
+      width: 30%;
+    }
+  }
+}
+
+.project-category--photography {
+  article {
+    width: 49%;
+    margin-bottom: 10px;
+    @include media($breakpoint__screen-size--phone-landscape) {
+      width: 33%;
+    }
+
+    @include media($breakpoint__screen-size--tablet-portrait) {
+      width: 24%;
+    }
+
+    @include media($breakpoint__screen-size--tablet-landscape) {
+      width: 19.5%;
+    }
+  }
+}
+
+.single.photography {
+  .content-sidebar-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content-footer {
+    border: none;
+    padding: 0;
+  }
+}
+
+.photography {
+  .content-image {
+    display: block;
+    margin: 0 auto;
+  }
+}
