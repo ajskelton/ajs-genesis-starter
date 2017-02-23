@@ -39,6 +39,7 @@ function unregister_genesis_callbacks() {
 	unregister_menu_callbacks();
 	unregister_header_callbacks();
 	unregister_post_callbacks();
+	load_before_genesis();
 }
 
 /**

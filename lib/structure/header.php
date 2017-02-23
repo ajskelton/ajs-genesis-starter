@@ -19,7 +19,6 @@ namespace AnthonySkeltonTheme;
  */
 function unregister_header_callbacks() {
 	remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
-	remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 }
 
 add_filter( 'genesis_seo_title', __NAMESPACE__ . '\filter_front_page_site_title_html');

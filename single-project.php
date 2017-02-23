@@ -18,7 +18,12 @@ remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
 add_action( 'genesis_entry_content', 'genesis_do_post_title', 7 );
 
-add_action( 'genesis_entry_content', __NAMESPACE__ . '\display_featured_image', 6 );
+
+
+// Only add featured image to projects with category photography
+if( 'photography' == get_page_terms()[0]->slug ) :
+	add_action( 'genesis_entry_content', __NAMESPACE__ . '\display_featured_image', 6 );
+endif;
 /**
  * Print the Featured Image to the Entry Content
  *
@@ -50,15 +55,27 @@ add_action( 'genesis_attr_body', __NAMESPACE__ . '\add_project_taxonomy_class' )
  */
 function add_project_taxonomy_class( array $attributes ) {
 	if( is_single() ) {
-		global $post;
-		$terms = get_the_terms( $post->ID, 'project-category' );
-		if ( $terms && ! is_wp_error( $terms ) ) {
+		$terms = get_page_terms();
+			if ( $terms && ! is_wp_error( $terms ) ) {
 			foreach( $terms as $term ) {
 				$attributes['class'] .= ' ' . $term->slug;
 			}
 		}
 	}
 	return $attributes;
+}
+
+/**
+ * Gets the terms of the current page
+ *
+ * @since 1.0.0
+ *
+ * @return array
+ */
+function get_page_terms() {
+	global $post;
+	$terms = get_the_terms( $post->ID, 'project-category' );
+	return $terms;
 }
 
 genesis();
