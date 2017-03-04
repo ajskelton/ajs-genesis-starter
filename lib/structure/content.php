@@ -39,3 +39,5 @@ function add_page_slug_class( array $attributes ) {
 
 	return $attributes;
 }
+
+remove_filter('the_content', 'wpautop');

@@ -3,7 +3,6 @@
 
 .site-header.front-page {
   background: url('assets/images/footer_lodyas.png') repeat center center;
-  //height: 100vh;
 
   .wrap {
     padding: 0;
@@ -87,7 +86,6 @@
     @include span-columns(12);
     @include omega();
     display: none;
-    //float: none;
     text-align: center;
 
     @include media( $breakpoint__screen-size--tablet-portrait ) {
@@ -101,12 +99,6 @@
   position: relative;
   text-align: center;
   padding-bottom: $gutter * 3;
-
-  @include media( $breakpoint__screen-size--tablet-portrait ) {
-    //padding-bottom: 0;
-    //padding-right: $gutter * 2;
-    //text-align: left;
-  }
 
   img {
     border-radius: 50%;
